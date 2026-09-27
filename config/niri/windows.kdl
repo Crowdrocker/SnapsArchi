@@ -50,3 +50,10 @@ window-rule {
     match app-id="polkit-gnome-authentication-agent-1"
     open-floating true
 }
+
+ // if you use steam you will probably like these
+    window-rule {
+        match app-id="steam"
+        exclude title=r#"^[Ss]team$"#
+        open-floating true
+    }
